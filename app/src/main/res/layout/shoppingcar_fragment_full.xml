@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    
+    
+   
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/head_bg" >
+
+        <Button
+            android:id="@+id/btn_compile"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/bg_title_btn"
+            android:text="@string/compile"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btn_workout"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg_title_btn"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="@string/compute"
+            android:textColor="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/tab_menu_shopping"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_textsize" />
+    </RelativeLayout>
+
+   
+    
+    <include layout="@layout/shopping_tv_head_center_code"/>
+    <!--<include layout="@layout/item_listview_shopping_car"/>-->
+    
+   
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:paddingTop="5dp"
+        android:text="商品明细"
+        android:textSize="14dp" />
+    <include layout="@layout/shoppin_listview_body_code"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="您可以享受到以下优惠:"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:background="@drawable/product_detail_shop_selected"
+        android:text="可以享受的优惠活动信息(满增、满减)"/>
+
+
+
+
+</LinearLayout>

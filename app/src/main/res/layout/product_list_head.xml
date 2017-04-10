@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/rg1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/segment1_selector"
+        android:text="销量"
+        android:textColor="@drawable/text_bw_enable_selector"
+        android:textSize="16dp"/>
+
+    <Button
+        android:id="@+id/rg2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/segment2_selector"
+        android:text="价格"
+        android:textColor="@drawable/text_bw_enable_selector"
+        android:textSize="16dp"/>
+
+    <Button
+        android:id="@+id/rg3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/segment2_selector"
+        android:text="好评度"
+        android:textColor="@drawable/text_bw_enable_selector"
+        android:textSize="16dp"/>
+
+    <Button
+        android:id="@+id/rg4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/segment3_selector"
+        android:text="上架时间"
+        android:textColor="@drawable/text_bw_enable_selector"
+        android:textSize="16dp"/>
+</LinearLayout>

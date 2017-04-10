@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/head_bg"
+        >
+
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_title_btn"
+            android:text="账户中心"
+            android:textColor="@color/white"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="我的订单"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_textsize" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:id="@+id/tv_orderkind1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:text="近一个月订单"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/segment_selected_1_bg"
+            />
+
+        <TextView
+            android:id="@+id/tv_orderkind2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:text="一个月前订单"
+            android:gravity="center"
+            android:background="@drawable/segment_normal_2_bg"/>
+
+        <TextView
+            android:id="@+id/tv_orderkind3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:text="已取消订单"
+            android:gravity="center"
+            android:background="@drawable/segment_normal_3_bg"/>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_layout"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+     <!--android:cacheColorHint="@android:color/transparent" 滚动过程中没有黑色背景
+     android:divider="@null" listView没有分割线
+     android:fadingEdge="none" 去除顶部底部黑色背景
+     android:listSelector="@drawable/transparent" 点中没有默认颜色
+     android:scrollbars="none" 没有滚动条-->
+
+
+   <!-- <ListView
+        android:id="@+id/lv_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        >
+
+    </ListView>
+
+
+     <TextView
+         android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您现在还没有生成订单哦"/>-->
+
+
+</LinearLayout>

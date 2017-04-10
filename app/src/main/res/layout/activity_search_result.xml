@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/tv_result_count"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/bg_title"
+            android:gravity="center"
+            android:text="搜索结果"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btn_search_back"
+            android:layout_width="72dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/head_back_selector"
+            android:gravity="center"
+            android:onClick="back"
+            android:text="返回"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:id="@+id/ll_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_sort_sales"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/id_segment_selected_1_bg"
+                    android:gravity="center"
+                    android:text="销量"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_sort_price"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/id_segment_normal_2_bg"
+                    android:gravity="center"
+                    android:text="价格" />
+
+                <TextView
+                    android:id="@+id/tv_sort_comm"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/id_segment_normal_2_bg"
+                    android:gravity="center"
+                    android:text="好评度" />
+
+                <TextView
+                    android:id="@+id/tv_sort_time"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/id_segment_normal_3_bg"
+                    android:gravity="center"
+                    android:text="上架时间" />
+
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_search_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/id_empty_img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="抱歉，无此商品" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

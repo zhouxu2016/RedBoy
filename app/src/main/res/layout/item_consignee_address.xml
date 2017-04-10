@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/button_long_selected"
+    android:gravity="center_vertical"
+    >
+    <TextView
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/tv_address"
+        android:text="你说说想到底想做什么呢?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_marginRight="20dp"
+        android:id="@+id/iv_select"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

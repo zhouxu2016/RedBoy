@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/head_bg" >
+
+        <Button
+            android:id="@+id/btn_compute"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/btn_back_bg"
+            android:text="返回"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btn_new_address"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg_title_btn"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="新增地址"
+            android:textColor="@color/white" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="地址管理"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_textsize" />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入姓名"
+        android:background="@drawable/edit_text"
+            />
+    <EditText
+        android:id="@+id/et_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入电话号码"
+        android:inputType="number"
+        android:background="@drawable/edit_text" />
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入地址"
+        android:background="@drawable/edit_text" />
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:text="提交"
+        android:background="@drawable/button_long_normal"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content" />
+</LinearLayout>

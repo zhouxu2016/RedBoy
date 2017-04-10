@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_shape_icon"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:layout_alignTop="@+id/icon"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:layout_toRightOf="@+id/icon"
+        android:maxLines="2"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:text="qq唐"
+        />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/icon"
+        android:textColor="@color/bg_title"
+        android:text="68" />
+
+    <TextView
+        android:id="@+id/marketprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/price"
+        android:text="68" />
+
+    <TextView
+        android:id="@+id/commentcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price"
+        android:layout_alignBottom="@+id/icon"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/icon"
+        android:textColor="#aaaaaaaa"
+        android:text="已有10人评价" />
+
+    <ImageView
+        android:id="@+id/open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/open" />
+
+
+</RelativeLayout>

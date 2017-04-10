@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/iv_product_pic"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:background="@drawable/xiaohai"
+        />
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_product_pic"
+        android:text="童衣裤男童圆领毛衣"
+        android:textSize="18dp"
+        android:singleLine="true"
+        />
+    <LinearLayout
+        android:layout_toRightOf="@id/iv_product_pic"
+        android:layout_below="@id/tv_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_product_pic">
+    <include layout="@layout/shopping_product_list"/>
+    </LinearLayout>
+
+    <ImageView
+
+        android:layout_centerVertical="true"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/open"
+        android:id="@+id/iv_lv_product_go"
+        android:layout_alignParentRight="true"
+        />
+    
+    
+</RelativeLayout>

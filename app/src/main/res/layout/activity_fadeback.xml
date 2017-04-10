@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/head_bg" >
+
+        <Button
+            android:id="@+id/btn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/bg_title_btn"
+            android:text="更多"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_fadeback"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="用户反馈"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_textsize" />
+
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bg_title_btn"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="反馈内容(您可以输入对商品以及客户端的建议和意见)"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"/>
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="344dp"
+        android:layout_height="140dp"
+        android:hint="用户评论输入框"
+        android:textSize="14sp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_shape_corners"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联系方式"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"/>
+
+    <EditText
+        android:id="@+id/et_contactnum"
+        android:layout_width="344dp"
+        android:layout_height="65dp"
+        android:hint="您的姓名,手机号,邮箱"
+        android:textSize="14sp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_shape_corners"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        />
+
+
+</LinearLayout>

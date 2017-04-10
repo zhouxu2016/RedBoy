@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/head_bg" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/bg_title_btn"
+            android:text="返回"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_helptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="购物指南"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_textsize" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1, 问在这里购物 , 可以保证我的安全吗 ?"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_detail_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="随着人们居住环境的升人们越来越重视自己的个人安全和财产安全，对人家庭以及住宅的小区的安全方面提出了更高的要求"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+
+</LinearLayout>

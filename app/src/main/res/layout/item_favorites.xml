@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:paddingBottom="15dp">
+
+
+        <ImageView
+            android:id="@+id/iv_proimg"
+            android:layout_width="94dp"
+            android:layout_height="100dp"
+            android:background="@drawable/category_vehicle01"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_bar_title"
+            android:layout_toRightOf="@id/iv_proimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="爽歪歪"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_toRightOf="@id/iv_proimg"
+            android:layout_below="@id/tv_bar_title"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥ 68.00"
+            android:textSize="16sp"
+            android:textColor="#ff0000"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_markprice"
+            android:layout_toRightOf="@id/tv_price"
+            android:layout_below="@id/tv_bar_title"
+            android:layout_marginTop="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥ 68.00"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="30dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_commentcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已有234条评论"
+            android:layout_below="@id/tv_price"
+            android:layout_toRightOf="@id/iv_proimg"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow_right"
+            android:layout_centerVertical="true"
+            />
+
+
+</RelativeLayout>

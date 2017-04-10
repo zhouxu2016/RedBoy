@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zhouxu.redboy">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+
+    <application
+        android:name="activity.BaseApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".MainActivity"
+            android:windowSoftInputMode="adjustNothing"></activity>
+
+        <activity android:name="activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        
+        <activity android:name="activity.shopCarNull"></activity>
+      
+        
+        
+        <activity android:name="activity.OrderListActivity"/>
+        <activity android:name="activity.HelpCenterActivity"/>
+        <activity android:name="activity.HelpDetailActivity"/>
+        <activity android:name="activity.FadeBackActivity"/>
+
+        <activity android:name="activity.AccountCenterActivity"></activity>
+        <activity android:name="activity.LoginActivity"></activity>
+        <activity android:name="activity.RegistActivity"></activity>
+        <activity android:name=".SearchResultActivity"></activity>
+
+
+        <activity android:name="activity.GiftActivity"></activity>
+        <activity android:name="activity.FavoritesActivity"></activity>
+        <activity android:name="activity.AboutActivity"></activity>
+
+
+
+        <activity android:name="activity.PanicBuyingActivity"></activity>
+        <activity android:name="activity.ImmediatelyBuyingActivity"></activity>
+        <activity android:name="activity.ImmediatelyListingActivity"></activity>
+        <activity android:name="activity.NewProductActivity"></activity>
+        <activity android:name="activity.HotGoodsActivity"></activity>
+        <activity android:name="activity.GoodsListingActivity"></activity>
+        <activity android:name="activity.HotOnlyActivity"></activity>
+
+        <!--以下是结算中心的配置-->
+        <activity android:name="activity.PayCenterActivity"></activity>
+        <activity android:name="activity.ConsigneeAddressActivity"></activity>
+        <activity android:name="activity.PayWayActivity"></activity>
+        <activity android:name="activity.ExpressTimeActivity"></activity>
+        <activity android:name="activity.ExpressWayActivity"></activity>
+        <activity android:name="activity.FavorableActivity"></activity>
+        <activity android:name="activity.WantInvoiceActivity"></activity>
+        <activity android:name="activity.NewAddressActivity"></activity>
+
+        <!-- 品牌  配置 -->
+        <activity android:name="activity.Brand2Level"/>
+        <activity android:name="activity.Brand3Level"/>
+        <activity android:name="activity.ProductListActivity"/>
+        <activity android:name="activity.AaaActivity"/>
+        <activity android:name="activity.ProductDetailsActivity">
+        </activity>
+        <activity android:name="activity.SelectProductListActivity">
+        </activity>
+    </application>
+
+</manifest>
